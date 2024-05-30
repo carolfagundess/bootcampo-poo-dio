@@ -3,6 +3,8 @@ package br.com.dio.desafio.dominio;
 public class Curso extends Conteudo{
 
     private int cargaHoraria;
+    private Instrutor intrutor;
+    private Linguagem linguagem;
 
     @Override
     public double calcularXp() {
@@ -10,8 +12,8 @@ public class Curso extends Conteudo{
     }
 
     public Curso() {
+        super();
     }
-
 
     public int getCargaHoraria() {
         return cargaHoraria;
@@ -19,6 +21,22 @@ public class Curso extends Conteudo{
 
     public void setCargaHoraria(int cargaHoraria) {
         this.cargaHoraria = cargaHoraria;
+    }
+
+    public Instrutor getIntrutor() {
+        return intrutor;
+    }
+
+    public void setIntrutor(Instrutor intrutor) {
+        this.intrutor = intrutor;
+    }
+
+    public Linguagem getLinguagem() {
+        return linguagem;
+    }
+
+    public void setLinguagem(Linguagem linguagem) {
+        this.linguagem = linguagem;
     }
 
     @Override
